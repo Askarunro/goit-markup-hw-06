@@ -405,15 +405,44 @@
                 </div>
             </div>
         </footer>
+
+
+
+
         <div class="backdrop is-hidden" data-modal>
-            <div class="modal"  >
-                <p>
-                </p>
+            <div class="modal">
                 <button data-modal-close type="button" class="btn-close">
                     <svg class="icon-close" width="11" height="11">
                         <use href="./images/sprite.svg#Vector"></use>
                     </svg>
                 </button>
+                <b class="legend">Оставьте свои данные, мы вам перезвоним</b>
+                <form> 
+                    <div class="form-field">
+                        <label for="">Имя</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label for="">Телефон</label>
+                        <input type="tel">
+                    </div>
+                    <div class="form-field">
+                        <label for="">Почта</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field textarea">
+                        <label for="">Комментарий</label>
+                        <textarea name="comment" rows="7" placeholder="Введите текст"></textarea>
+                    </div> 
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="checkbox1"></input>
+                        <label for="">Соглашаюсь с рассылкой и принимаю</label>
+                        <a href="" class="link">Условия договора</a>
+                    </div> 
+                    
+                    <button type="submit" class="btn-submit">Отправить</button>
+               </form>
             </div>
         </div>
         <!-- <script> -->
