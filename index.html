@@ -419,10 +419,7 @@
                 </div>
             </div>
         </footer>
-
-
-
-
+        <!-- BACKDROP -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button data-modal-close type="button" class="btn-close">
@@ -433,57 +430,30 @@
                 <b class="legend">Оставьте свои данные, мы вам перезвоним</b>
                 <form> 
                     <div class="form-field">
-                        <label for="">Имя</label>
-                        <input type="text">
+                        <label for="inp-name">Имя</label>
+                        <input type="text" name="text" id="inp-name">
                     </div>
                     <div class="form-field">
-                        <label for="">Телефон</label>
-                        <input type="tel">
+                        <label for="inp-tel">Телефон</label>
+                        <input type="tel" name="tel" id="inp-tel">
                     </div>
                     <div class="form-field">
-                        <label for="">Почта</label>
-                        <input type="text">
+                        <label for="inp-mail">Почта</label>
+                        <input type="email" name="email" id="inp-mail">
                     </div>
                     <div class="form-field textarea">
-                        <label for="">Комментарий</label>
-                        <textarea name="comment" rows="7" placeholder="Введите текст"></textarea>
+                        <label for="comment">Комментарий</label>
+                        <textarea name="comment" id="comment" rows="7" placeholder="Введите текст"></textarea>
                     </div> 
-
                     <div class="form-checkbox">
-                        <input type="checkbox" name="checkbox1"></input>
+                        <input type="checkbox" name="checkbox1">
                         <label for="">Соглашаюсь с рассылкой и принимаю</label>
                         <a href="" class="link">Условия договора</a>
                     </div> 
-                    
                     <button type="submit" class="btn-submit">Отправить</button>
                </form>
             </div>
         </div>
-        <!-- <script> -->
-        <script src="./js/modal.js">
-        // const refs = {
-        //         openModalBtn: document.querySelector('[data-modal-open]'),
-        //         closeModalBtn: document.querySelector('[data-modal-close]'),
-        //         modal: document.querySelector('[data-modal]'),
-        //     };
-
-        //     refs.openModalBtn.addEventListener('click', toggleModal);
-        //     refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        //     function toggleModal() {
-        //         refs.modal.classList.toggle('is-hidden');
-        //     }
-        </script>
-        <!-- <script>
-            (() => {
-                    document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-                        e.preventDefault();
-
-                        new FormData(e.currentTarget).forEach((value, name) =>
-                            console.log(`${name}: ${value}`),
-                        );
-                    });
-                })();
-        </script> -->
+        <script src="./js/modal.js"></script>
     </body>
 </html>
