@@ -881,6 +881,11 @@ color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   pointer-events: visible;
+  transition: fill 250ms var(--timing-function);
+}
+
+.btn-close:hover{
+  fill: #2196f3;
 }
 
 .legend{
@@ -904,13 +909,14 @@ margin-bottom: 12px;
   color:#757575
 }
 
-.form-field > input{
+.field{
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 /* box-sizing: border-box; */
 border-radius: 4px;
 color: #000000;
 padding-left: 42px;
+transition: border-color 250ms var(--timing-function) ;
 }
 
 .form{
@@ -934,11 +940,26 @@ padding-left: 42px;
   transform: translate(12px , -11px);
 }
 
+.field:focus-within{
+  outline: none;
+border-color: #2196f3;
+}
+
+.field:focus-within + .icon-field{
+  fill: #2196f3;
+}
+
 .textarea{
   padding: 12px 16px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+resize: none;
+transition: border-color 250ms var(--timing-function) ;
+}
 
+.textarea:focus-within{
+  outline: none;
+  border-color: #2196f3;
 }
 
 .form-checkbox{
@@ -952,6 +973,7 @@ border-radius: 4px;
 
 .input-contract{
   margin-right: 7px;
+  border: 1px solid #212121;
 }
 
 .link-contract{
