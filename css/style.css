@@ -947,6 +947,7 @@ transition: border-color 250ms var(--timing-function) ;
   left: 0;
   bottom: 0;
   transform: translate(12px , -11px);
+  transition: fill 250ms var(--timing-function) ;
 }
 
 .field:focus-within{
@@ -971,7 +972,7 @@ transition: border-color 250ms var(--timing-function) ;
   border-color: #2196f3;
 }
 
-.form-checkbox{
+.box-contract{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -981,6 +982,18 @@ transition: border-color 250ms var(--timing-function) ;
 }
 
 .input-contract{
+ 
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.box-checkbox{
+width: 15px;
+height: 15px;
+border-radius: 2px;
+
   margin-right: 7px;
   border: 1px solid #212121;
 }
@@ -988,6 +1001,9 @@ transition: border-color 250ms var(--timing-function) ;
 .link-contract{
   color:#2196F3 ;
 }
+
+
+
 
 .btn-submit{
   display: block;
