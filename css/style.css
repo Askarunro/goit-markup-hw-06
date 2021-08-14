@@ -855,6 +855,7 @@ color: #FFFFFF;
   background-color: rgba(0, 0, 0, 0.2);
   /* opacity: 1; */
   pointer-events: none;
+  
 }
 
 .modal {
@@ -871,7 +872,34 @@ color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  animation: animationModal 2000ms linear;
 }
+
+@keyframes animationModal{
+  0% {
+    opacity: 0;
+  }
+
+  /* 20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  } */
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .btn-close {
   position: absolute;
@@ -1001,9 +1029,6 @@ border-radius: 2px;
 .link-contract{
   color:#2196F3 ;
 }
-
-
-
 
 .btn-submit{
   display: block;
