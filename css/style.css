@@ -816,8 +816,7 @@ nav {
   transition: border-color 250ms var(--timing-function);
 }
 
-.form {
-  position: absolute;
+.form-modal {
   pointer-events: visible;
 }
 
@@ -826,12 +825,11 @@ nav {
 
   display: flex;
   flex-direction: column;
-  pointer-events: visible;
 }
 
-.form-field:not(:last-child) {
-  margin-bottom: 10px;
-}
+.form-field + .form-field {
+  margin-top: 10px;
+} 
 
 .form-field-thumb {
   position: relative;
@@ -874,7 +872,6 @@ nav {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  pointer-events: visible;
 }
 
 .box-contract > label {
@@ -934,5 +931,4 @@ nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  pointer-events: visible;
 }
